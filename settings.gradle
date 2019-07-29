@@ -1,1 +1,1 @@
-include ':app', ':widgetlib'
+include ':app', ':widgetlib', ':libapt'

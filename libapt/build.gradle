@@ -1,0 +1,17 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.auto.service:auto-service:1.0-rc2'
+    implementation 'com.squareup:javapoet:1.9.0'
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
+
+//tasks.withType(JavaCompile) {
+//    compileTask ->
+//        compileTask.dependsOn tasks.findByName('idea')
+//        //解决编码问题
+//        options.encoding = "UTF-8"
+//}
